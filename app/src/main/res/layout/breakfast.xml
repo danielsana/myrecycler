@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ff9800"
+    tools:context=".BreakFast">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BreakFast"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="50dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bugger_intro"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            app:elevation="10dp"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:orientation="vertical">
+                <WebView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:id="@+id/bugwebview"/>
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                app:elevation="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#301E03"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:textAlignment="center"
+                    android:text="DIFFERENT MEALS."
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:paddingLeft="30dp"
+                    android:textAlignment="textStart"
+                    android:text="Soft-scrambled eggs."
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:paddingLeft="30dp"
+                    android:textAlignment="textStart"
+                    android:text="Avocado, Chèvre and Bacon Omelette."
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:paddingLeft="30dp"
+                    android:textAlignment="textStart"
+                    android:text="Smoky Bacon, Potato and Cheddar Hash "
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:paddingLeft="30dp"
+                    android:textAlignment="textStart"
+                    android:text="Spinach-Mushroom Strata. "
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:paddingLeft="30dp"
+                    android:textAlignment="textStart"
+                    android:text="Salsa Verde Baked Eggs."
+                    />
+
+
+            </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:text="Order Now!!!"
+            android:id="@+id/breakfastglovo"/>
+
+    </LinearLayout>
+
+</LinearLayout>
